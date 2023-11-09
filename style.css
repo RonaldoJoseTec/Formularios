@@ -1,7 +1,10 @@
-.header{
+header{
     text-align: center;
     background-color:;
-    font-size: 17px;
+    font-size: 23px;
+}
+.control{
+    padding: 3px;
 }
 
 button[type="submit"] {
