@@ -8,7 +8,53 @@
 </head>
 <body>
     <header>Formulário teste</header>
+
     <form action="">
+
+        <div class="control">
+            <label for="volume">Volume:</label>
+            <input type="range" id="volume" min="0" max="75" step="15">
+        </div>
+
+        <fieldset>
+            <legend>Localidade</legend>
+
+            <label for="pais">País</label>
+            <select name="" id="pais">
+                <option value="0">Afeganistão</option>
+                <option value="1" selected>Brasil</option>
+                <option value="2">EUA</option>
+                <option value="3">Rússia</option>
+            </select>
+    
+            <div class="control">
+                <label for="selectUF">UF:</label>
+                <input list="uf" value="SP" id="selectUF">
+            </div>
+        </fieldset>
+
+        <div class="control">
+            <fieldset>
+                <legend>Turno</legend>
+
+                <input type="radio" name="turno" id="manha">
+                <label for="manha">Manhã</label>
+    
+                <input type="radio" name="turno" id="tarde">
+                <label for="tarde">Tarde</label>
+    
+                <input type="radio" name="turno" id="noite">
+                <label for="noite">Noite</label>
+            </fieldset>
+        </div>
+
+        <datalist id="uf">
+            <option value="AP">Amapá</option>
+            <option value="CE">Ceará</option>
+            <option value="SP">São Paulo</option>
+            <option value="TO">Tocantins</option>
+        </datalist>
+
         <div class="control">
             <label for="codigo">Código:</label>
             <input type="number" id="codigo" value="125" disabled>
@@ -60,6 +106,11 @@
         </div>
 
         <div class="control">
+            <label for="dataHoraCadastro">Data e hora de cadastro:</label>
+            <input type="datetime-local" id="dataHoraCadastro">
+        </div>
+        
+        <div class="control">
             <label for="novaSenha">Nova senha:</label>
             <input type="password" id="novaSenha">
         </div>
@@ -69,10 +120,10 @@
             <input type="file" id="arquivo">
         </div>
 
-        <div class="control">
+        <!--<div class="control">
             <label for="imagem">Arquivo:</label>
             <input type="image" id="imagem" alt="Imagem do form">
-        </div>
+        </div> -->
         
         <div class="control">
             <label for="corPreferida">Cor preferida:</label>
